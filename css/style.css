@@ -1,92 +1,80 @@
 *{
-    margin:0px;
-    padding:0px;
-}
-html{
-    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
 }
 #home{
-    width:100%;
-    height:99vw;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+#home a{
+    color: white;
+}
+#container-nav{
+    height:auto;
 }
 #nav{
     width:80%;
-    border-bottom:2px solid white;
-    margin-left:10%;
+    margin-left: 10%;
+    border-bottom: 2px solid white;
+    height:100%;
 }
-#navbarNav{
+.navRight{
     display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end; 
-}
-#nav a{
-    color:white;
-}
-#nav li a:hover {
-    color:#17a2b8;
-}
-#logo{
-    float:left;
-   /* margin-right: 9.5Vw;*/
-}
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    font-size:1.2Vw;
+ }
 #jumb{
-    background-image: url('../img/slajder.jpg');
+    width: 100%;
+    height: 100Vh;
+   background-image: url("../img/slajder.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width:100%;
-    height: 47.6Vw;
-    position: absolute;
-}
-#slajder-text{
+    border-radius: 0px;
+    padding-top: 100px;
+}#slajder-text{
     width:40%;
     height:auto;
-    margin-top: 5%;
     color:white;
     background-color: rgba(24, 23, 23, 0.452);
+    padding-left: 5px;
 }
 #slajder-text h1{
     font-size:4.5Vw;
-    margin-left: 5%;
-}
-.button{
-    width:40%;
-    height:5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
 }
 #slajder-text a{
     font-size: 2Vw;
 }
 #ponuda{
     width:80%;
-    height:29.2Vw;
+    height:70Vh;
     margin-left: 10%;
     background-color: azure;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.589), 0 10px 20px 0 rgba(0, 0, 0, 0.534);
-    margin-bottom: 1.5Vw;
-    margin-bottom: 1.5Vw;
-    position: relative;
-    top: 44.1Vw;
+    position: absolute;
+    bottom:35Vh;
 }
 #btn{
-    width:40%;
-    height:25%;
+    width:60%;
+    height:15Vh;
 }
 #btn button{
-    width:8.8Vw;
-    height:5.1Vw;
-    margin-right: 0.4Vw;
+    width:30%;
+    height:15Vh;
+    margin-right: 0.2Vw;
     border-radius: 0px;
+    font-size: 1.5Vw;
 }
 .fas{
-    margin-right: 5px;
+    margin-right: 10px;
+    font-size: 1.5Vw;
 }
 #container1{
     width:80%;
-    height:14.6Vw;
+    height:auto;
     margin-left: 10%;
-    position: relative;
-    top:50Vw;
+    margin-top:70Vh;
 }
 .img1{
     float: left;
@@ -111,8 +99,8 @@ html{
 }
 #destination{
     width: 100%;
-    height:131.7Vw;
-    background-color: rgb(234, 238, 243);
+    height:auto;
+    background-color: rgba(234, 238, 243);
 }
 .naslov{
     width:80%;
@@ -122,66 +110,83 @@ html{
 }
 .omot{
     width: 80%;
+    height: auto;
     margin-left: 10%;
-    margin-top: 2.9Vw;   
+    margin-top: 2.9Vw; 
 }
 .row1{
     margin-bottom: 1.5Vw;
-    margin-top: 2.9Vw;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 2.5Vw;
+    height: auto;
 }
 #slika1{
     background-image: url("../img/kina.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:320px;
+    height:48Vh;
     float: left;
+    width: 100%;
 }
 #slika2{
     background-image: url("../img/venecuela.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:320px;
+    height:48Vh;
     float: right;
+    width:100%;
 }
 .slika h3{
     color: white;
     margin-top: 11Vw;
+    margin-left: 10px;
 }
 .slika p{
     color: white;
+    margin-left: 10px;
 }
 #slika3{
     background-image: url("../img/brazil.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:49Vw;
     float: left;
     color: white;
+    width:100%;
+    height: 100%;
+}
+.images{
+    height: 100%;
+    width: 100%;
 }
 #slika3 h3{
     margin-top: 36.6Vw;
+    margin-left: 10px;
 }
-
+#slika3 p{
+    margin-left: 10px;
+}
 #slika4{
     background-image: url("../img/australija.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:23.4Vw;
+    height:100%;
     float: left;
     color: white;
+    width: 100%;
+
 
 }
 #slika5{
     background-image: url("../img/norveska.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:23.4Vw;
+    height:100%;
     float: left;
     color: white;
+    width:100%;
 }
-
+.slika2{
+    padding-right: 0px;
+}
 .slika1 h3{
     margin-top: 16Vw;
 }
@@ -189,38 +194,74 @@ html{
     background-image: url("../img/turska.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:23.45Vw;
+    height:100%;
     float: left;
-    margin-top: 27px;
     color: white;
+    width:100%;
+
 }
 #slika6 h3{
-    margin-top: 16.8Vw;
+    margin-top: 14.8Vw;
 }
-#desno{
-    float: right;
+
+#deo1{
+    height:47.5%;
+    width:100%;
+}
+#deo2{
+    height:47.5%;
+    width:100%;
+    padding-right: 0px;
+    margin-top: 5%;
 }
 #container-fluid1{
-    height: 40.3Vw;
+    height: 350px;
     background-image: url("../img/kapadokija.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 3.6Vw;
-    text-align: center;
+    margin-top: 30px;
     color: white;
-    padding-top: 11Vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#JoinNaslov{
+    height:30%;
+    width: 100%;
+}
+#JoinNaslov h2{
+    font-size: 2.5Vw;
+}
+#Join{
+    height:50%;
+    width:80%;    
+    text-align: center;
+}
+#JoinBtn{
+    height:10%;
 }
 #tajmer{
-    height: 11Vw;
-    width:50%;
-    margin-left: 25%;
+    height: 60%;
+    width:90%;
+    margin-left: 5%;
     background-color: rgba(24, 23, 23, 0.452);
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tajmer p{
+    font-size: 4.4Vw;
+    margin: 0px;
+}
+#containerImages{
+    height:auto;
 }
 #packages{
     width: 100%;
-    height:155Vw;
+    height:auto;
     background-color:  rgb(234, 238, 243);
 }
 .mesto{
@@ -238,6 +279,7 @@ html{
 }
 .card-com{
     margin-top: 30px;
+    text-align: justify;
 }
 .card-com p{
     font-size: 1Vw;
@@ -255,9 +297,13 @@ html{
     width: 100%;
     border-radius: 50px;
 }
+.card{
+    width:100% !important;
+    height:100% !important;
+}
 #offer{
     width: 100%;
-    height:660px;
+    height:100Vh;
     background-image: url("../img/holandija.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -304,11 +350,13 @@ html{
 }
 #blog{
     width: 100%;
-    height:1000px;
+    height:auto;
     background-color: rgb(234, 238, 243);
 }
+
 .card-comm{
-    height:320px;
+    text-align: justify;
+    height: 100%;
 }
 .card-comm p{
     font-size: 1.1Vw;
@@ -327,7 +375,7 @@ html{
 }
 #subs{
     width: 100%;
-    height:450px;
+    height:80Vh;
     background-image: url("../img/santorini.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -339,4 +387,33 @@ html{
     background-color: rgba(24, 23, 23, 0.63);
     text-align: center;
     color: white;
+}
+@media screen and (max-width:991px){
+    .navRight{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    .containerClass{
+        height:100px;
+    }
+    #ponuda{
+        bottom:45Vh;
+    }
+    #container1{
+        margin-top:50Vh;
+    }
+    .row1 .d-flex{
+        display: block !important;
+    }
+    #desno{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .slika2{
+        padding-right: 15px;
+    }
+    .margin{
+        margin-top: 20px;
+    }
 }
