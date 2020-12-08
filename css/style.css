@@ -7,12 +7,17 @@ html{
 }
 #home{
     width:100%;
-    height:1352px;
+    height:99vw;
 }
 #nav{
     width:80%;
     border-bottom:2px solid white;
     margin-left:10%;
+}
+#navbarNav{
+    display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end; 
 }
 #nav a{
     color:white;
@@ -22,52 +27,55 @@ html{
 }
 #logo{
     float:left;
-    margin-right:130px;
+   /* margin-right: 9.5Vw;*/
 }
 #jumb{
     background-image: url('../img/slajder.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    height: 650px;
-    position: relative;
+    height: 47.6Vw;
+    position: absolute;
 }
 #slajder-text{
     width:40%;
-    height:57%;
+    height:auto;
     margin-top: 5%;
     color:white;
     background-color: rgba(24, 23, 23, 0.452);
 }
 #slajder-text h1{
     font-size:4.5Vw;
+    margin-left: 5%;
 }
 .button{
     width:40%;
     height:5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 #slajder-text a{
     font-size: 2Vw;
 }
 #ponuda{
     width:80%;
-    height:400px;
+    height:29.2Vw;
     margin-left: 10%;
     background-color: azure;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.589), 0 10px 20px 0 rgba(0, 0, 0, 0.534);
-    margin-bottom: 20px;
-    position: absolute;
-    bottom: -450px;
-    margin-bottom: 20px;
+    margin-bottom: 1.5Vw;
+    margin-bottom: 1.5Vw;
+    position: relative;
+    top: 44.1Vw;
 }
 #btn{
     width:40%;
     height:25%;
 }
 #btn button{
-    width:120px;
-    height:70px;
-    margin-right: 5px;
+    width:8.8Vw;
+    height:5.1Vw;
+    margin-right: 0.4Vw;
     border-radius: 0px;
 }
 .fas{
@@ -75,9 +83,10 @@ html{
 }
 #container1{
     width:80%;
-    height:200px;
+    height:14.6Vw;
     margin-left: 10%;
-    margin-top: 400px;
+    position: relative;
+    top:50Vw;
 }
 .img1{
     float: left;
@@ -102,7 +111,7 @@ html{
 }
 #destination{
     width: 100%;
-    height:1800px;
+    height:131.7Vw;
     background-color: rgb(234, 238, 243);
 }
 .naslov{
@@ -114,11 +123,11 @@ html{
 .omot{
     width: 80%;
     margin-left: 10%;
-    margin-top: 40px;   
+    margin-top: 2.9Vw;   
 }
 .row1{
-    margin-bottom: 20px;
-    margin-top: 40px;
+    margin-bottom: 1.5Vw;
+    margin-top: 2.9Vw;
     display: flex;
     justify-content: space-between;
 }
@@ -138,7 +147,7 @@ html{
 }
 .slika h3{
     color: white;
-    margin-top: 150px;
+    margin-top: 11Vw;
 }
 .slika p{
     color: white;
@@ -147,19 +156,19 @@ html{
     background-image: url("../img/brazil.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:670px;
+    height:49Vw;
     float: left;
     color: white;
 }
 #slika3 h3{
-    margin-top: 500px;
+    margin-top: 36.6Vw;
 }
 
 #slika4{
     background-image: url("../img/australija.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:320px;
+    height:23.4Vw;
     float: left;
     color: white;
 
@@ -168,41 +177,41 @@ html{
     background-image: url("../img/norveska.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:320px;
+    height:23.4Vw;
     float: left;
     color: white;
 }
 
 .slika1 h3{
-    margin-top: 220px;
+    margin-top: 16Vw;
 }
 #slika6{
     background-image: url("../img/turska.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:320px;
+    height:23.45Vw;
     float: left;
     margin-top: 27px;
     color: white;
 }
 #slika6 h3{
-    margin-top: 230px;
+    margin-top: 16.8Vw;
 }
 #desno{
     float: right;
 }
 #container-fluid1{
-    height: 550px;
+    height: 40.3Vw;
     background-image: url("../img/kapadokija.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 50px;
+    margin-top: 3.6Vw;
     text-align: center;
     color: white;
-    padding-top: 150px;
+    padding-top: 11Vw;
 }
 #tajmer{
-    height: 150px;
+    height: 11Vw;
     width:50%;
     margin-left: 25%;
     background-color: rgba(24, 23, 23, 0.452);
@@ -211,7 +220,7 @@ html{
 }
 #packages{
     width: 100%;
-    height:2120px;
+    height:155Vw;
     background-color:  rgb(234, 238, 243);
 }
 .mesto{
