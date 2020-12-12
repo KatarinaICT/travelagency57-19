@@ -113,6 +113,7 @@
     height: auto;
     margin-left: 10%;
     margin-top: 2.9Vw; 
+    padding-bottom: 30px;
 }
 .row1{
     margin-bottom: 1.5Vw;
@@ -154,7 +155,7 @@
     height: 100%;
 }
 .images{
-    height: 100%;
+    height: 30%;
     width: 100%;
 }
 #slika3 h3{
@@ -388,6 +389,18 @@
     text-align: center;
     color: white;
 }
+#copyright{
+    width:30%;
+    text-align: center;
+}
+#copyright p{
+    color: white;
+}
+#ikonice{
+    width:70%;
+    color: white;
+}
+
 @media screen and (max-width:991px){
     .navRight{
         display: flex;
