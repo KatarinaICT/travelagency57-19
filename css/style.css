@@ -413,17 +413,40 @@
 .aktivan{
     display: block;
 }
-.formadesno{
-    width: 50%;
+.forma1{
+    width: 35%;
     float: left;
+    margin-right:5%;
 }
-.formalevo{
-    width: 50%;
+.forma2{
+    width:30%;
+    float: left;
+    margin-right: 5%;
+}
+.forma3{
+    width: 25%;
     float: right;
 }
 #rodForma p{
     color: red;
 }
+.forma.aktivan{
+    width: 100% !important;
+    height: 100% !important;
+    margin-left:20%;
+}
+.forma.aktivan select{
+    color: grey;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+}
+.date{
+    color: grey;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
 @media screen and (max-width:991px){
     .navRight{
         display: flex;
