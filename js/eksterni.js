@@ -1,26 +1,13 @@
-// Set the date we're counting down to
 var rok_kraj = new Date("Jan 21, 2021 00:00:00").getTime();
-
-// Update the count down every 1 second
 var x = setInterval(function() {
-
-  // Get today's date and time
   var datum = new Date().getTime();
-    
-  // Find the distance between now and the count down date
   var odbrojavanje = rok_kraj - datum;
-    
-  // Time calculations for days, hours, minutes and seconds
   var dani = Math.floor(odbrojavanje / (1000 * 60 * 60 * 24));
   var sati = Math.floor((odbrojavanje % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minute = Math.floor((odbrojavanje % (1000 * 60 * 60)) / (1000 * 60));
   var sekunde = Math.floor((odbrojavanje % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
   document.getElementById("demo").innerHTML = dani + "d " + sati + "h "
   + minute + "m " + sekunde + "s ";
-    
-  // If the count down is over, write some text 
   if (odbrojavanje < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
@@ -28,7 +15,7 @@ var x = setInterval(function() {
 }, 1000);
 
 var ul_Ispis=["Home","Destination","Packages", "Special offer", "Blog","Subscription","About author"]
-var href_ispis=["#home","#destination","#packages","offer","#blog","#subs","https://katarinaict.github.io/portfolio/"]
+var href_ispis=["#home","#destination","#packages","#offer","#blog","#subs","https://katarinaict.github.io/portfolio/"]
 var ulList=document.getElementById("ulList")
 for(var i=0;i<ul_Ispis.length;i++){
     ulList.innerHTML+=`<li class="nav-item active">
@@ -36,64 +23,61 @@ for(var i=0;i<ul_Ispis.length;i++){
     </li>`
 }
 
-var src=["img/italija.jpg","img/engleska.jpg","img/francuska.jpg"]
-var alt=["italija","engleska","francuska"]
-var h4=["Italy","England","France"]
-var h5=["499$","1499$","1199$"]
-var p=["5 Days 6 Nights","5 Star Accomodation","Transportation","Food Facilities"]
-var card_row1=document.getElementById("card_row1")
-var podaci=""
-for(var i=0;i<src.length;i++){
-    podaci+=`<div class="col-lg-4 col-sm-12 margin">
-    <div class="card" style="width: 18rem;">
-        <img src="${src[i]}" class="card-img-top" alt="${alt[i]}">
-        <div class="card-body card-body1">
-            <div class="mesto">
-          <h4 class="card-text">${h4[i]}</h4>
-          </div>
-          <div class="cena">
-          <h5>${h5[i]}</h5></hr>
-          </div><div class="cleaner"></div>
-        </div>
-        <div class="card-body card-body2">`
-        for(var j=0;j<p.length;j++){
-            podaci+=`<p class="card-text card-text1">> ${p[j]}</p>`
-        }
-        podaci+=`<a class="btn btn-info btn-sm" href="#ponuda" role="button">Book now</a> 
-        </div>
-</div>`
+// var src=["img/italija.jpg","img/engleska.jpg","img/francuska.jpg"]
+// var alt=["italija","engleska","francuska"]
+// var h4=["Italy","England","France"]
+// var h5=["499$","1499$","1199$"]
+// var p=["5 Days 6 Nights","5 Star Accomodation","Transportation","Food Facilities"]
+// var card_row1=document.getElementById("card_row1")
+// for(var i=0;i<src.length;i++){
+//     card_row1.innerHTML+=`<div class="col-lg-4 col-sm-12 margin">
+//     <div class="card" style="width: 18rem;">
+//         <img src="${src[i]}" class="card-img-top" alt="${alt[i]}">
+//         <div class="card-body card-body1">
+//             <div class="mesto">
+//           <h4 class="card-text">${h4[i]}</h4>
+//           </div>
+//           <div class="cena">
+//           <h5>${h5[i]}</h5></hr>
+//           </div><div class="cleaner"></div>
+//         </div>
+//         <div class="card-body card-body2">`
+//         for(var j=0;j<p.length;j++){
+//             card_row1.innerHTML+=`<p class="card-text card-text1">> ${p[j]}</p>`
+//         }
+//         card_row1.innerHTML+=`<a class="btn btn-info btn-sm" href="#ponuda" role="button">Book now</a> 
+//         </div>
+// </div>`
 
-}
-card_row1.innerHTML=podaci
+// }
 
-var src2=["img/indija.jpg","img/spanija.jpg","img/tajland.jpg"]
-var alt2=["indija","spanija","tajland"]
-var h42=["India","Spain","Thailand"]
-var h52=["799$","099$","799$"]
-var p2=["5 Days 6 Nights","5 Star Accomodation","Transportation","Food Facilities"]
-var card_row2=document.getElementById("card2")
-var podaci2=""
-for(var i=0;i<src2.length;i++){
-    podaci2+=`<div class="col-lg-4 col-sm-12 margin">
-    <div class="card" style="width: 18rem;">
-        <img src="${src2[i]}" class="card-img-top" alt="${alt2[i]}">
-        <div class="card-body card-body1">
-            <div class="mesto">
-          <h4 class="card-text">${h4[i]}</h4>
-          </div>
-          <div class="cena">
-          <h5>${h52[i]}</h5></hr>
-          </div><div class="cleaner"></div>
-        </div>
-        <div class="card-body card-body2">`
-        for(var j=0;j<p.length;j++){
-            podaci2+=`<p class="card-text card-text1">> ${p2[j]}</p>`
-        }
-        podaci2+=`<a href="#" class="btn btn-info">Book now</a> </div>
-        </div>
-</div>`
-}
-card_row1.innerHTML=podaci2
+
+// var src2=["img/indija.jpg","img/spanija.jpg","img/tajland.jpg"]
+// var alt2=["indija","spanija","tajland"]
+// var h42=["India","Spain","Thailand"]
+// var h52=["799$","099$","799$"]
+// var p2=["5 Days 6 Nights","5 Star Accomodation","Transportation","Food Facilities"]
+// var card_row2=document.getElementById("card2")
+// for(var i=0;i<src2.length;i++){
+//     card_row2.innerHTML+=`<div class="col-lg-4 col-sm-12 margin">
+//     <div class="card" style="width: 18rem;">
+//         <img src="${src2[i]}" class="card-img-top" alt="${alt2[i]}">
+//         <div class="card-body card-body1">
+//             <div class="mesto">
+//           <h4 class="card-text">${h4[i]}</h4>
+//           </div>
+//           <div class="cena">
+//           <h5>${h52[i]}</h5></hr>
+//           </div><div class="cleaner"></div>
+//         </div>
+//         <div class="card-body card-body2">`
+//         for(var j=0;j<p.length;j++){
+//             card_row2.innerHTML+=`<p class="card-text card-text1">> ${p2[j]}</p>`
+//         }
+//         card_row2.innerHTML+=`<a href="#ponuda" class="btn btn-info">Book now</a> </div>
+//         </div>
+// </div>`
+// }
 
 var p3=["5 Days 6 Nights","5 Star Accomodation","Transportation","Food Facilities"]
 var ponuda1=document.getElementById("ponuda1")
@@ -136,4 +120,126 @@ for(var i=0;i<src.length;i++){
     <p>${p[i]}</p>
     <p><b>${p2[i]}</b></p>
 </div>`
+}
+
+function provera(){
+    var emailNewsletter=document.getElementById('provera').value
+    var email1regex= /^[a-z][a-z_\.0-9]+@([a-z0-9]{3,7}\.){1-3}[a-z]{2,3}$/;
+    var email1result = email1regex.test(emailNewsletter);
+    var ispis=""
+    if(!email1result){
+    document.getElementById('proveramail').innerHTML+=`Please enter a valid email
+    address!`
+    return false;
+}
+else{
+document.getElementById('proveramail').innerHTML+=`Subscription successful!`;
+return true;
+}
+}
+mail .onsubmit=provera;
+
+function provera1(){
+    var ddlPlacanje = document.getElementById("destlist");
+    var selektovani=ddlPlacanje.selectedIndex;
+    var pprovera=document.getElementById("destprovera")
+    if (selektovani == 0){
+        pprovera.innerHTML=`Please select some option!`
+    } else {
+        pprovera.innerHTML=``
+    } 
+    var ddlPlacanje = document.getElementById("destmem");
+    var selektovani=ddlPlacanje.selectedIndex;
+    var pprovera=document.getElementById("memprovera")
+    if (selektovani == 0){
+        pprovera.innerHTML=`Please select some option!`
+    } else {
+        pprovera.innerHTML=``
+    } 
+    var ddlPlacanje = document.getElementById("destdure");
+    var selektovani=ddlPlacanje.selectedIndex;
+    var pprovera=document.getElementById("destdur")
+    if (selektovani == 0){
+        pprovera.innerHTML=`Please select some option!`
+    } else {
+        pprovera.innerHTML=``
+    } 
+}
+function provera2(){
+    var ddlPlacanje = document.getElementById("desthot");
+    var selektovani=ddlPlacanje.selectedIndex;
+    var pprovera=document.getElementById("pdes")
+    if (selektovani == 0){
+        pprovera.innerHTML=`Please select some option!`
+    } else {
+        pprovera.innerHTML=``
+    } 
+    var ddlPlacanje = document.getElementById("hotmem");
+    var selektovani=ddlPlacanje.selectedIndex;
+    var pprovera=document.getElementById("memhot")
+    if (selektovani == 0){
+        pprovera.innerHTML=`Please select some option!`
+    } else {
+        pprovera.innerHTML=``
+    } 
+    var ddlPlacanje = document.getElementById("hotdur");
+    var selektovani=ddlPlacanje.selectedIndex;
+    var pprovera=document.getElementById("durhot")
+    if (selektovani == 0){
+        pprovera.innerHTML=`Please select some option!`
+    } else {
+        pprovera.innerHTML=``
+    } 
+
+}
+function provera3(){
+    var rbAll = document.formafli.rb;
+    var p=document.getElementById("radio");
+    for (var i=0; i<rbAll.length; i++){
+    if (rbAll[i].checked){
+    p.innerHTML=``
+    }
+    else
+    p.innerHTML=`Choose some option!`
+ }
+ var ddlPlacanje = document.getElementById("loc");
+ var selektovani=ddlPlacanje.selectedIndex;
+ var pprovera=document.getElementById("loca")
+ if (selektovani == 0){
+     pprovera.innerHTML=`Please select some option!`
+ } else {
+     pprovera.innerHTML=``
+ } 
+ var ddlPlacanje = document.getElementById("go");
+    var selektovani=ddlPlacanje.selectedIndex;
+    var pprovera=document.getElementById("going")
+    if (selektovani == 0){
+        pprovera.innerHTML=`Please select some option!`
+    } else {
+        pprovera.innerHTML=``
+    } 
+    var ddlPlacanje = document.getElementById("adul");
+    var selektovani=ddlPlacanje.selectedIndex;
+    var pprovera=document.getElementById("padul")
+    if (selektovani == 0){
+        pprovera.innerHTML=`Please select some option!`
+    } else {
+        pprovera.innerHTML=``
+    } 
+    var ddlPlacanje = document.getElementById("chil");
+    var selektovani=ddlPlacanje.selectedIndex;
+    var pprovera=document.getElementById("pchil")
+    if (selektovani == 0){
+        pprovera.innerHTML=`Please select some option!`
+    } else {
+        pprovera.innerHTML=``
+    } 
+    var ddlPlacanje = document.getElementById("clas");
+    var selektovani=ddlPlacanje.selectedIndex;
+    var pprovera=document.getElementById("pclas")
+    if (selektovani == 0){
+        pprovera.innerHTML=`Please select some option!`
+    } else {
+        pprovera.innerHTML=``
+    } 
 }
