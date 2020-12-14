@@ -4,3 +4,8 @@ $(document).ready(function(){
         $($(this).data("formular")).addClass("aktivan")
     })
 })
+
+$(window).load(function(){
+    var tajmer = 10000;
+setTimeout ("$('#com').html( $('#com2').html() );", tajmer );
+    });

@@ -121,6 +121,21 @@ for(var i=0;i<src.length;i++){
     <p><b>${p2[i]}</b></p>
 </div>`
 }
+var src=["img/komentari4.jpg","img/komentari5.jpg","img/komentari6.jpg"]
+var alt=["Angie","Lori","Rosy"]
+var p=["Great great trip.Backroads does such a fabulous job.LOVED the hotel in the Marais and will definitely go back there. Location was great. Room was small so would spring for bigger room next time.All good.thanks for all your help.","Italy was magical with my granddaughters.  The only changes I would make if I were to to it again would be one more night in Tuscany and one less in Florence.    ... everything was perfect, it was the trip of a lifetime.","Ciao Christine and George. Having a fantastico time. Thanks to both of you. Grand Hotel Paris was exceptional!Brunelleschi over the top, literally, since Claudio upgraded us to the tower suite overlooking the Duomo ...he said u are the best. We agree. Mille Grazia and Arividerchi"]
+var p2=["Judy S.","Jill","Rick S."]
+var com=document.getElementById("com2")
+for(var i=0;i<src.length;i++){
+    com.innerHTML+=`<div class="col-lg-3 col-sm-12 card-com">
+    <div class="image">
+        <img src="${src[i]}" alt="${alt[i]}">
+    </div>
+    <i class="fas fa-quote-left"></i>
+    <p>${p[i]}</p>
+    <p><b>${p2[i]}</b></p>
+</div>`
+}
 
 function provera(){
     var emailNewsletter=document.getElementById('provera').value
